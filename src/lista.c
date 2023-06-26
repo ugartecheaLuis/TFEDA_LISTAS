@@ -148,7 +148,7 @@ void imprimir(lista* l){
     if(es_vacia(l) == 0){
         nodo* temp=l->head;
         printf("[  ");
-        for(int i = 0; i<l->len; i++){
+        while (temp->sig != NULL){
             printf("%i  ",temp->dato);
             temp = temp->sig;
         }

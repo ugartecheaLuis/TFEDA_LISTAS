@@ -152,15 +152,15 @@ void vaciar (listac *l){
 
 void imprimir(listac* l){
     if(es_vacia(l) == 0){
-        nodo* temp=l->head;
-        printf("[  ");
-        for(int i = 0; i<l->len; i++){
+        nodo* temp = l->head;
+        printf("[ ");
+        while (temp->sig != l->head){
             printf("%i  ",temp->dato);
             temp = temp->sig;
         }
         printf("]\n");
     }else{
-        printf("La lista circular esta vacia\n");
+        printf("La lista esta vacia\n");
         return;
     }
 }
