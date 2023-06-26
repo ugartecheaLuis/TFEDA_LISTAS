@@ -48,7 +48,7 @@ void agregar (listac* l, int p, int e){
         }
         if (p > 0 && p < l->len){
             nodo* temp = l->head;
-            for (int pos = 0; pos = (p-1); pos++){
+            for (int i = 0; i < (p-1); i++){
                 temp = temp->sig;
             }
             nuevo->sig = temp->sig;
