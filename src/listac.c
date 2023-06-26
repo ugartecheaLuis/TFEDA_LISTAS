@@ -154,7 +154,7 @@ void imprimir(listac* l){
     if(es_vacia(l) == 0){
         nodo* temp = l->head;
         printf("[ ");
-        while (temp->sig != l->head){
+        while (temp != l->head){
             printf("%i  ",temp->dato);
             temp = temp->sig;
         }
